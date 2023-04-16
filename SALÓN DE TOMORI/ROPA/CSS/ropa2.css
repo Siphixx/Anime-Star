@@ -1,0 +1,418 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: rgb(35, 6, 104);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  border: 1px solid black;
+  width: 99.8%;
+  background-image: linear-gradient(#000000a1, #00000017, #00000017, rgb(48, 7, 82), #00000017);
+}
+
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+nav .logo {
+  color: white;
+  font-size: 33px;
+  font-weight: bold;
+  line-height: 70px;
+  padding-left: 10px;
+}
+
+nav {
+  height: 70px;
+  background: #000000;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, .4);
+  padding: 20px;
+}
+
+nav ul {
+  float: right;
+  margin-right: 30px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: white;
+  display: block;
+  padding: 0 15px;
+  line-height: 70px;
+  font-size: 20px;
+  background: #000000;
+  transition: .5s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #dd6dff;
+}
+
+nav ul ul {
+  position: absolute;
+  top: 85px;
+  border-top: 3px solid #dd6dff;
+  opacity: 0;
+  visibility: hidden;
+}
+
+nav ul li:hover>ul {
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+  transition: .3s linear;
+}
+
+nav ul ul li {
+  width: 150px;
+  display: list-item;
+  position: relative;
+  border: 1px solid #000000;
+  border-top: none;
+}
+
+nav ul ul li a {
+  line-height: 50px;
+}
+
+nav ul ul ul {
+  border-top: none;
+}
+
+nav ul ul ul li {
+  position: relative;
+  top: -70px;
+  left: 150px;
+}
+
+nav ul ul li a i {
+  margin-left: 45px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+
+}
+
+
+
+button:hover span {
+  width: 100%;
+}
+
+button:hover {
+  border: none;
+}
+
+/* PRODUCTS */
+.product {
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.product-category {
+  padding: 0 10vw;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.product-container {
+  padding: 0 10vw;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.product-container::-webkit-scrollbar {
+  display: none;
+}
+
+.product-card {
+  flex: 0 0 auto;
+  width: 250px;
+  height: 450px;
+  margin-right: 40px;
+}
+
+.product-image {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.product-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.discount-tag {
+  position: absolute;
+  background: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  color: #be32ff;
+  right: 10px;
+  top: 10px;
+  text-transform: capitalize;
+}
+
+.card-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  width: 90%;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  background: #fff;
+  border-radius: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.product-card:hover .card-btn {
+  opacity: 1;
+}
+
+.card-btn:hover {
+  background: #be32ff;
+  color: #fff;
+}
+
+.product-info {
+  width: 100%;
+  height: 100px;
+  padding-top: 10px;
+}
+
+.product-brand {
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.product-short-description {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  opacity: 0.6;
+  text-transform: capitalize;
+  margin: 5px 0;
+  color: #fff;
+  font-weight: bold;
+}
+
+.price {
+  font-weight: 900;
+  font-size: 20px;
+  color: #fff;
+}
+
+.actual-price {
+  margin-left: 20px;
+  opacity: 0.8;
+  text-decoration: line-through;
+  color:red;
+  font-weight: bold;
+}
+
+.pre-btn,
+.nxt-btn {
+  border: none;
+  width: 10vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(158, 135, 161, 0) 0%, rgb(43, 36, 36) 580%);
+  cursor: pointer;
+  z-index: 8;
+}
+
+.pre-btn {
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.nxt-btn {
+  right: 0;
+}
+
+.pre-btn img,
+.nxt-btn img {
+  opacity: 0.2;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+  opacity: 1;
+}
+
+.collection-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.collection {
+  position: relative;
+}
+
+.collection img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.collection p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  text-transform: capitalize;
+}
+
+.collection:nth-child(3) {
+  grid-column: span 2;
+  margin-bottom: 10px;
+}
+
+/* EFECTO NEON TITULO*/
+.box h2 {
+  width: 25%;
+  margin: 60px;
+  color: #fff;
+  font-size: 4em;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-shadow: 0 0 10px #bf45f8, 0 0 20px #be32ff, 0 0 40px #be32ff,
+      0 0 80px #be32ff, 0 0 120px #be32ff;
+
+
+}
+
+.box {
+  margin-bottom: 55px;
+}
+
+.titlogo {
+  color: white;
+  font-size: 40px;
+  margin-left: 40px;
+  font-weight: bold;
+  text-shadow: 0 0 10px #bf45f8, 0 0 20px #bf45f8, 0 0 40px #bf45f8;
+}
+
+.titlogo:hover {
+  text-shadow: 0 0 10px #bf45f8, 0 0 20px #bf45f8, 0 0 40px #bf45f8,
+      0 0 80px #bf45f8, 0 0 120px #bf45f8;
+
+}
+
+footer {
+  background-color: black;
+  display: flex;
+  height: 70px;
+  padding: 20px;
+  border-top: 0.1px solid white;
+}
+
+footer p {
+  width: 90%;
+  margin: 30px 20px 30px 20px;
+  color: white;
+}
+
+footer div {
+  margin: 10px;
+  display: flex;
+}
+
+footer div img {
+  margin-inline: 8px;
+  border: 1.1px solid rgb(93, 141, 245);
+  border-radius: 10px;
+}
+
+
+.icon {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 10px;
+  border-radius: 50%;
+  transition: all .8s;
+  cursor: pointer;
+}
+
+.icon:hover {
+  background-color: #1877f2;
+  box-shadow: 0 0 20px #1877f2;
+}
+
+.icon:hover:nth-child(2) {
+  background-color: #1877f2;
+  box-shadow: 0 0 20px #1877f2;
+}
+
+.icon i {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.7rem;
+}
+
+svg circle {
+  stroke-dasharray: 150;
+  transition: all .8s ease-in-out;
+}
+
+.icon:hover circle {
+  stroke-dasharray: 220;
+}
+
+.icon:hover circle {
+  stroke-dasharray: 220;
+}
+
+h1 {
+  color: #fff;
+  font-size: 4em;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-shadow: 0 0 10px #bf45f8, 0 0 20px #be32ff, 0 0 40px #be32ff,
+    0 0 80px #be32ff, 0 0 120px #be32ff;
+   text-align: center;
+margin-top: 100px;
+}

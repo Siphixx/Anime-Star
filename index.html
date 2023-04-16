@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Star</title>
+    <link rel="shortcut icon" href="../Intro/SALÓN DE TOMORI/INICIO/IMÁGENES/Logo.jpg" type="image/x-icon">
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="CSS/login.css">
+</head>
+
+<body>
+    <div class="intro">
+        <h1 class="titlogo">Anime Star</h1>
+        <br><br><br><br>
+        <h1 class="logo">
+            <span class="logo-parts">A</span>
+            <span class="logo-parts">-</span>
+            <span class="logo-parts">S</span>
+        </h1>
+        <br><br>
+        <p>Disfruta de lo que más te gusta</p>
+    </div>
+
+    <div class="content">
+
+        <div class="container">
+
+            <div class="content1">
+
+                <form id="frmlogueo" onsubmit="cargar(this)">
+
+                    <img class="goku" src="https://www.gratistodo.com/wp-content/uploads/2021/12/Gifs-Goku-12.gif"
+                        alt="">
+                    <h2 class>Welcome</h2>
+
+                    <div class="input-div one ">
+                        <div class="i">
+                            <i class="fa fa-user"></i>
+                        </div>
+                        <div class="div">
+
+                            <input type="text" name="txtusuario" placeholder="Username">
+                        </div>
+                    </div>
+
+                    <div class="input-div pass">
+                        <div class="i">
+                            <i class="fa fa-lock"></i>
+                        </div>
+                        <div class="div">
+
+                            <input type="password" name="txtclave" placeholder="Password">
+                        </div>
+                    </div>
+
+                    <a href="#">Forgot Password?</a>
+
+                    <input class="boton-neon" type="submit" value="Login">
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/login.js"></script>
+    
+</body>
+
+</html>

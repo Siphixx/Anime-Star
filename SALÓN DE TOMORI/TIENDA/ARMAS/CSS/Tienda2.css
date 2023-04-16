@@ -1,0 +1,613 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
+
+* {
+   font-family: 'Nunito', sans-serif;
+   margin: 0;
+   padding: 0;
+   outline: none;
+   border: none;
+   text-decoration: none;
+   transition: all .2s linear;
+}
+
+html {
+   font-size: 60%;
+
+}
+
+body {
+   background-color: rgb(35, 6, 104);
+   font-family: Arial, Helvetica, sans-serif;
+   margin: 0;
+   border: 1px solid black;
+   width: 99.8%;
+   background-image: linear-gradient(#000000a1, #00000017, #00000017, rgb(48, 7, 82), #00000017);
+}
+
+a {
+   text-decoration: none;
+}
+
+/*Header*/
+header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: rgb(0, 0, 0);
+   height: 101px;
+   padding: 20px;
+   border-bottom: 0.1px solid white;
+   background-image: linear-gradient(#000000, #000000, #000000);
+}
+
+.logo {
+   display: flex;
+   align-items: center;
+   color: white;
+
+}
+
+.logo img:hover {
+   box-shadow: 0 0 10px #45014b, 0 0 15px #70175a, 0 0 20px #3e0355;
+
+}
+
+.nombre-pagina {
+   text-shadow: 0 0 10px #0e0808, 0 0 40px #5a335a, 0 0 50px #331181;
+   ;
+}
+
+.logo img {
+   width: 80px;
+   height: 80px;
+   border-radius: 50px;
+   border: 1px solid white;
+   box-shadow: 0 0 10px #796f6f, 0 0 40px #b586c4, 0 0 20px #280775;
+}
+
+#botones a :hover {
+   box-shadow: 0 0 10px #796f6f, 0 0 40px #272727, 0 0 50px #291033;
+   size-adjust: 15px;
+}
+
+.nav-link img {
+   width: 50px;
+   height: 50px;
+   padding: 5px;
+   border: 1px solid white;
+   border-radius: 30px;
+   box-shadow: 0 0 10px #bba8a8, 0 0 40px #1b1010, 0 0 50px #29213a;
+}
+
+.imgusuario {
+   margin-right: 0;
+}
+
+#contenedor {
+   width: 100%;
+   margin: 30px auto;
+}
+
+/*  header  */
+
+h1 {
+   padding-bottom: 40px;
+   text-align: center;
+   color: white;
+}
+
+header h2 {
+   padding: 20px;
+   text-align: center;
+   color: white;
+}
+
+h2.sub {
+   padding: 10px;
+   text-align: center;
+   color: white;
+}
+
+header img {
+   width: 100%;
+   vertical-align: bottom;
+}
+
+
+/* barra */
+
+#headerbarra {
+
+   width: 1875px;
+   height: 70px;
+   padding-left: 18px;
+
+}
+
+ul,
+ol {
+   list-style: none;
+}
+
+#barra li a {
+   display: block;
+   background-color: #000000;
+   border-radius: 30px;
+   padding: 10px 95px;
+   box-shadow: 0 0 10px #dedae6, 0 0 20px #353535;
+   color: aliceblue;
+   margin-inline: 27px;
+   text-shadow: 0 0 10px #726e6e;
+   font-weight: bold;
+   border: 1px solid white;
+}
+
+#barra>li {
+   float: left;
+}
+
+#barra li ul {
+   display: none;
+   position: absolute;
+
+}
+
+#headerbarra li ul li {
+   position: relative;
+}
+
+#barra li:hover>ul {
+   display: block;
+}
+
+#barra a:hover {
+   color: aliceblue;
+   box-shadow: 0 0 10px #bba8a8, 0 0 40px #a3a3a3, 0 0 50px #331181;
+   font-size: 17.2px;
+   transition: 0.2s;
+}
+
+
+#barra li ul li ul {
+   right: -302px;
+   top: 0px;
+   text-align: center;
+}
+
+/*MAIN*/
+main {
+   display: flex;
+}
+
+/*ASIDE*/
+
+.card {
+   position: relative;
+   width: 225px;
+   height: 275px;
+   margin: 20px;
+}
+
+.card .face {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   backface-visibility: hidden;
+   border-radius: 10px;
+   overflow: hidden;
+   transition: .5s;
+}
+
+.card .front {
+   transform: perspective(600px) rotateY(0deg);
+   box-shadow: 0 5px 10px #000;
+}
+
+.card .front img {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.card .front h3 {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   height: 45px;
+   line-height: 45px;
+   color: #fff;
+   background: rgba(0, 0, 0, .4);
+   text-align: center;
+}
+
+.card .back {
+   transform: perspective(600px) rotateY(180deg);
+   background: rgb(3, 35, 54);
+   padding: 15px;
+   color: #f3f3f3;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   text-align: center;
+   box-shadow: 0 5px 10px #000;
+}
+
+.card .back .link {
+   border-top: solid 1px #f3f3f3;
+   height: 50px;
+   line-height: 50px;
+}
+
+.card .back .link a {
+   color: #f3f3f3;
+   font-size: 20px;
+}
+
+.card .back h3 {
+   font-size: 30px;
+   margin-top: 20px;
+   letter-spacing: 2px;
+}
+
+.card .back p {
+   font-size: 12px;
+}
+
+.card:hover .front {
+   transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+   transform: perspective(600px) rotateY(360deg);
+}
+
+/*Section*/
+section {
+   width: 80%;
+   margin-top: 3px;
+   margin-bottom: 3px;
+}
+
+.container {
+   max-width: 1000px;
+   margin: 0 auto;
+   padding: 3rem 2rem;
+}
+
+.container .title {
+   font-size: 3.5rem;
+   color: whitesmoke;
+   margin-bottom: 3rem;
+   text-transform: uppercase;
+   text-align: center;
+}
+
+.container .products-container {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+   gap: 2rem;
+}
+
+.container .products-container .product {
+   text-align: center;
+   padding: 3rem 2rem;
+   background: #fff;
+   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+   outline: .1rem solid #ccc;
+   outline-offset: -1.5rem;
+   cursor: pointer;
+}
+
+.container .products-container .product:hover {
+   outline: .2rem solid #222;
+   outline-offset: 0;
+}
+
+.container .products-container .product img {
+   height: 9.8rem;
+}
+
+.container .products-container .product:hover img {
+   transform: scale(.9);
+}
+
+.container .products-container .product h3 {
+   padding: .5rem 0;
+   font-size: 2rem;
+   color: #444;
+}
+
+.container .products-container .product:hover h3 {
+   color: #27ae60;
+}
+
+.container .products-container .product .price {
+   font-size: 2rem;
+   color: #444;
+}
+
+.products-preview {
+   position: fixed;
+   top: 0;
+   left: 0;
+   min-height: 100vh;
+   width: 100%;
+   background: rgba(0, 0, 0, .8);
+   display: none;
+   align-items: center;
+   justify-content: center;
+}
+
+.products-preview .preview {
+   display: none;
+   padding: 2rem;
+   text-align: center;
+   background: #fff;
+   position: relative;
+   margin: 2rem;
+   width: 40rem;
+}
+
+.products-preview .preview.active {
+   display: inline-block;
+}
+
+.products-preview .preview img {
+   height: 15rem;
+}
+
+.products-preview .preview .fa-times {
+   position: absolute;
+   top: 1rem;
+   right: 1.5rem;
+   cursor: pointer;
+   color: #444;
+   font-size: 4rem;
+}
+
+.products-preview .preview .fa-times:hover {
+   transform: rotate(90deg);
+}
+
+.products-preview .preview h3 {
+   color: #444;
+   padding: .5rem 0;
+   font-size: 2.5rem;
+}
+
+.products-preview .preview .stars {
+   padding: 1rem 0;
+   font-size: 1.7rem;
+}
+
+.products-preview .preview .stars i {
+   color: #27ae60;
+}
+
+.products-preview .preview .stars span {
+   color: #999;
+}
+
+.products-preview .preview p {
+   line-height: 1.5;
+   padding: 1rem 0;
+   font-size: 1.6rem;
+   color: #777;
+}
+
+.products-preview .preview .price {
+   padding: 1rem 0;
+   font-size: 2.5rem;
+   color: #27ae60;
+}
+
+.products-preview .preview .buttons {
+   display: flex;
+   gap: 1.5rem;
+   flex-wrap: wrap;
+   margin-top: 1rem;
+}
+
+.products-preview .preview .buttons a {
+   flex: 1 1 16rem;
+   padding: 1rem;
+   font-size: 1.8rem;
+   color: #444;
+   border: .1rem solid #444;
+}
+
+.products-preview .preview .buttons a.buy {
+   background: #444;
+   color: #fff;
+}
+
+.products-preview .preview .buttons a.buy:hover {
+   background: #111;
+}
+
+@media (max-width:991px) {
+   html {
+      font-size: 55%;
+   }
+}
+
+@media (max-width:768px) {
+   .products-preview .preview img {
+      height: 25rem;
+   }
+}
+
+@media (max-width:450px) {
+   html {
+      font-size: 50%;
+   }
+}
+
+/* footer */
+footer {
+   background-color: black;
+   display: flex;
+   height: 70px;
+   padding: 20px;
+   border-top: 0.1px solid white;
+}
+
+footer .pa {
+   width: 90%;
+   margin: 30px 20px 30px 20px;
+   color: white;
+   font-size: 12.3pt;
+}
+
+footer div {
+   margin: 10px;
+   display: flex;
+}
+
+footer div img {
+   margin-inline: 8px;
+   border: 1.1px solid rgb(93, 141, 245);
+   border-radius: 10px;
+}
+
+.icon {
+   position: relative;
+   width: 80px;
+   height: 80px;
+   margin: 10px;
+   border-radius: 50%;
+   transition: all .8s;
+   cursor: pointer;
+}
+
+.icon:hover {
+   background-color: #1877f2;
+   box-shadow: 0 0 20px #1877f2;
+}
+
+.icon:hover:nth-child(2) {
+   background-color: #1877f2;
+   box-shadow: 0 0 20px #1877f2;
+}
+
+.icon i {
+   color: #fff;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-size: 3rem;
+}
+
+svg circle {
+   stroke-dasharray: 150;
+   transition: all .8s ease-in-out;
+}
+
+.icon:hover circle {
+   stroke-dasharray: 220;
+}
+
+
+
+nav .logo {
+   color: white;
+   font-size: 33px;
+   font-weight: bold;
+   line-height: 70px;
+   padding-left: 10px;
+}
+
+nav {
+   height: 70px;
+   background: #000000;
+   box-shadow: 0 3px 15px rgba(0, 0, 0, .4);
+   margin-bottom: 90px;
+   padding: 20px;
+}
+
+nav ul {
+   float: right;
+   margin-right: 30px;
+}
+
+nav ul li {
+   display: inline-block;
+}
+
+nav ul li a {
+   color: white;
+   display: block;
+   padding: 0 15px;
+   line-height: 70px;
+   font-size: 20px;
+   background: #000000;
+   transition: .5s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+   color: #dd6dff;
+}
+
+nav ul ul {
+   position: absolute;
+   top: 85px;
+   border-top: 3px solid #dd6dff;
+   opacity: 0;
+   visibility: hidden;
+}
+
+nav ul li:hover>ul {
+   top: 70px;
+   opacity: 1;
+   visibility: visible;
+   transition: .3s linear;
+}
+
+nav ul ul li {
+   width: 150px;
+   display: list-item;
+   position: relative;
+   border: 1px solid #000000;
+   border-top: none;
+}
+
+nav ul ul li a {
+   line-height: 50px;
+}
+
+nav ul ul ul {
+   border-top: none;
+}
+
+nav ul ul ul li {
+   position: relative;
+   top: -70px;
+   left: 150px;
+}
+
+nav ul ul li a i {
+   margin-left: 45px;
+}
+
+.logo {
+   width: 100px;
+   height: 100px;
+
+}
+
+.titlogo {
+   color: white;
+   font-size: 40px;
+   margin-left: 40px;
+   font-weight: bold;
+   text-shadow: 0 0 10px #bf45f8, 0 0 20px #bf45f8, 0 0 40px #bf45f8;
+}
+
+.titlogo:hover {
+   text-shadow: 0 0 10px #bf45f8, 0 0 20px #bf45f8, 0 0 40px #bf45f8,
+      0 0 80px #bf45f8, 0 0 120px #bf45f8;
+
+}

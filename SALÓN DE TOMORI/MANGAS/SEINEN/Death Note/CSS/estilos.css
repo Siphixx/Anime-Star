@@ -1,0 +1,539 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(35, 6, 104);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    border: 1px solid black;
+    width: 99.8%;
+    background-image: linear-gradient(#000000a1, #00000017, #00000017, rgb(48, 7, 82), #00000017);
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    height: 60px;
+    padding: 20px;
+    border-bottom: 0.1px solid white;
+    background-image: linear-gradient(#000000, #000000, #000000);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+
+}
+
+.logo img:hover {
+    box-shadow: 0 0 10px #45014b, 0 0 15px #70175a, 0 0 20px #3e0355;
+
+}
+
+.nombre-pagina {
+    text-shadow: 0 0 10px #0e0808, 0 0 40px #5a335a, 0 0 50px #331181;
+    ;
+}
+
+.logo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    border: 1px solid white;
+    box-shadow: 0 0 10px #796f6f, 0 0 40px #b586c4, 0 0 20px #280775;
+}
+
+#botones a :hover {
+    box-shadow: 0 0 10px #796f6f, 0 0 40px #272727, 0 0 50px #291033;
+    size-adjust: 15px;
+}
+
+.nav-link img {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 30px;
+    box-shadow: 0 0 10px #bba8a8, 0 0 40px #1b1010, 0 0 50px #29213a;
+}
+
+.imgusuario {
+    margin-right: 0;
+}
+
+#contenedor {
+    width: 100%;
+    margin: 30px auto;
+}
+
+/*  header  */
+
+header h2 {
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+h2.sub {
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+header img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+
+/* barra */
+
+#headerbarra {
+
+    width: 1875px;
+    height: 70px;
+    padding-left: 18px;
+
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+#barra li a {
+    display: block;
+    background-color: #000000;
+    border-radius: 30px;
+    padding: 10px 95px;
+    box-shadow: 0 0 10px #dedae6, 0 0 20px #353535;
+    color: aliceblue;
+    margin-inline: 27px;
+    text-shadow: 0 0 10px #726e6e;
+    font-weight: bold;
+    border: 1px solid white;
+}
+
+#barra>li {
+    float: left;
+}
+
+#barra li ul {
+    display: none;
+    position: absolute;
+
+}
+
+#headerbarra li ul li {
+    position: relative;
+}
+
+#barra li:hover>ul {
+    display: block;
+}
+
+#barra a:hover {
+    color: aliceblue;
+    box-shadow: 0 0 10px #bba8a8, 0 0 40px #a3a3a3, 0 0 50px #331181;
+    font-size: 17.2px;
+    transition: 0.2s;
+}
+
+
+#barra li ul li ul {
+    right: -302px;
+    top: 0px;
+    text-align: center;
+}
+
+
+main {
+    display: flex;
+    padding-bottom: 20px;
+    margin-left: 10px;
+}
+
+/*  aside */
+aside {
+    width: 25%;
+    padding: 20px;
+
+}
+
+
+
+/*  aside derecha  */
+aside img {
+    width: 70%;
+    margin: 20px auto;
+    display: block;
+}
+
+/*  section  */
+
+section {
+    width: 60%;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+/* card */
+.card {
+    width: 20%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+.card img {
+    width: 100%;
+    height: 210px;
+}
+
+.card .contenido {
+    padding: 15px;
+    text-align: center;
+}
+
+.card .contenido h3 {
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.card .contenido a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #2fb4cc;
+    border: 1px solid#2fb4cc;
+    border-radius: 4px;
+    transform: translateY(-3%);
+}
+
+.card .contenido a:hover {
+    background: #2fb4cc;
+    color: #fff;
+}
+
+
+/* footer */
+footer {
+    background-color: black;
+    display: flex;
+    height: 70px;
+    padding: 20px;
+    border-top: 0.1px solid white;
+}
+
+footer p {
+    width: 90%;
+    margin: 30px 20px 30px 20px;
+    color: white;
+}
+
+footer div {
+    margin: 10px;
+    display: flex;
+}
+
+footer div img {
+    margin-inline: 8px;
+    border: 1.1px solid rgb(93, 141, 245);
+    border-radius: 10px;
+}
+
+/* Título */
+.maquina {
+    display: flex;
+    justify-content: center;
+    font-family: "monaco";
+    font-size: 25pt;
+    padding: 10px;
+    padding-bottom: 50px;
+    color: #fff;
+}
+
+.maquina>.text {
+    max-width: 0;
+    animation: typing 4s steps(var(--characters)) infinite;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.maquina:after {
+    content: " |";
+    animation: blink 1s infinite;
+    animation-timing-function: step-end;
+}
+
+@keyframes typing {
+
+    75%,
+    100% {
+        max-width: calc(var(--characters) * 1ch);
+    }
+}
+
+@keyframes blink {
+
+    0%,
+    75%,
+    100% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0;
+    }
+}
+
+
+
+
+@font-face {
+    font-family: 'Mukta';
+    src: url('Mukta-Regular.ttf');
+}
+
+.card4 {
+    width: 320px;
+    height: 320px;
+    display: grid;
+    grid-template-rows: minmax(100%, 1fr);
+    grid-template-areas: "stack";
+    overflow: hidden;
+    border: 3px solid #333;
+    border-radius: 20px;
+}
+
+.card4 img,
+.card4 figcaption {
+    grid-area: stack;
+}
+
+.card4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card4 figcaption {
+    background-color: rgba(200, 120, 35, 0.3);
+    transform: translateY(calc(100% - 3rem));
+    transition: transform 0.6s;
+    color: #fff;
+    text-align: center;
+}
+
+.card4 figcaption h3 {
+    height: 3rem;
+    font-size: 2rem;
+}
+
+.card4:hover figcaption {
+    transform: none
+}
+
+
+
+
+
+
+
+
+.icon {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    border-radius: 50%;
+    transition: all .8s;
+    cursor: pointer;
+}
+
+.icon:hover {
+    background-color: #1877f2;
+    box-shadow: 0 0 20px #1877f2;
+}
+
+.icon:hover:nth-child(2) {
+    background-color: #1877f2;
+    box-shadow: 0 0 20px #1877f2;
+}
+
+.icon i {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.7rem;
+}
+
+svg circle {
+    stroke-dasharray: 150;
+    transition: all .8s ease-in-out;
+}
+
+.icon:hover circle {
+    stroke-dasharray: 220;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+nav .logo {
+    color: white;
+    font-size: 33px;
+    font-weight: bold;
+    line-height: 70px;
+    padding-left: 10px;
+}
+
+nav {
+    height: 70px;
+    background: #000000;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, .4);
+    margin-bottom: 90px;
+    padding: 20px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 30px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: white;
+    display: block;
+    padding: 0 15px;
+    line-height: 70px;
+    font-size: 20px;
+    background: #000000;
+    transition: .5s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #dd6dff;
+}
+
+nav ul ul {
+    position: absolute;
+    top: 85px;
+    border-top: 3px solid #dd6dff;
+    opacity: 0;
+    visibility: hidden;
+}
+
+nav ul li:hover>ul {
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+    transition: .3s linear;
+}
+
+nav ul ul li {
+    width: 150px;
+    display: list-item;
+    position: relative;
+    border: 1px solid #000000;
+    border-top: none;
+}
+
+nav ul ul li a {
+    line-height: 50px;
+}
+
+nav ul ul ul {
+    border-top: none;
+}
+
+nav ul ul ul li {
+    position: relative;
+    top: -70px;
+    left: 150px;
+}
+
+nav ul ul li a i {
+    margin-left: 45px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+
+}
+
+
+
+
+/* EFECTO NEON TITULO*/
+.box h2 {
+    color: #fff;
+    font-size: 4em;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-shadow: 0 0 10px #bf45f8, 0 0 20px #be32ff, 0 0 40px #be32ff,
+        0 0 80px #be32ff, 0 0 120px #be32ff;
+
+
+}
+
+.box {
+    margin-bottom: 55px;
+}
+
+.titlogo {
+    color: white;
+    font-size: 40px;
+    margin-left: 40px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #bf45f8, 0 0 20px #bf45f8, 0 0 40px #bf45f8;
+}
+
+.titlogo:hover {
+    text-shadow: 0 0 10px #bf45f8, 0 0 20px #bf45f8, 0 0 40px #bf45f8,
+        0 0 80px #bf45f8, 0 0 120px #bf45f8;
+
+}

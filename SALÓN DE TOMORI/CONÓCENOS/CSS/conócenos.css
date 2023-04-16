@@ -1,0 +1,334 @@
+
+/*BODY*/
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(35, 6, 104);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    border: 1px solid black;
+    width: 99.8%;
+    background-image: linear-gradient(#000000a1, #00000017, #00000017, rgb(48, 7, 82), #00000017);
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    margin-top: 5%;
+}
+
+.wrapper h1 {
+    font-family: 'Allura', cursive;
+    font-size: 52px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.team .team_member {
+    background: rgb(52, 3, 71);
+    margin: 50px;
+    margin-bottom: 50px;
+    width: 300px;
+    padding: 20px;
+    line-height: 20px;
+    color: #150025;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #bf45f8,
+        0 0 20px #be32ff;
+}
+
+.team .team_member h3 {
+    color: #81c644;
+    font-size: 26px;
+    margin-top: 50px;
+}
+
+.team .team_member p.role {
+    color: #ccc;
+    margin: 12px 0;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+
+.team .team_member .team_img i {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 100px;
+
+
+    text-shadow: 0 0 15px #c300ff,
+        0 0 5px #efdbff,
+        0 0 5px #ffffff;
+
+
+}
+
+p {
+    color: white;
+}
+
+.icon {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    border-radius: 50%;
+    transition: all .8s;
+    cursor: pointer;
+
+}
+
+.icon:hover {
+    background-color: #1877f2;
+    box-shadow: 0 0 20px #1877f2;
+}
+
+.icon:hover:nth-child(2) {
+    background-color: #1877f2;
+    box-shadow: 0 0 20px #1877f2;
+}
+
+.icon i {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    margin-top: -2px;
+    border-radius: 9px;
+    padding: 2px;
+
+}
+
+svg circle {
+    stroke-dasharray: 150;
+    transition: all .8s ease-in-out;
+}
+
+.icon:hover circle {
+    stroke-dasharray: 220;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#botones a :hover {
+    box-shadow: 0 0 10px #796f6f, 0 0 40px #272727, 0 0 50px #291033;
+    size-adjust: 15px;
+}
+
+body {
+    background-color: rgb(35, 6, 104);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    border: 1px solid black;
+    width: 99.8%;
+    background-image: linear-gradient(#000000a1, #2c1861, #2c1861, #00000017);
+
+
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+nav .logo {
+    color: white;
+    font-size: 33px;
+    font-weight: bold;
+    line-height: 70px;
+    padding-left: 10px;
+}
+
+nav {
+    height: 70px;
+    background: #000000;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, .4);
+    margin-bottom: 90px;
+    padding: 20px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 30px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: white;
+    display: block;
+    padding: 0 15px;
+    line-height: 70px;
+    font-size: 20px;
+    background: #000000;
+    transition: .5s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #dd6dff;
+}
+
+nav ul ul {
+    position: absolute;
+    top: 85px;
+    border-top: 3px solid #dd6dff;
+    opacity: 0;
+    visibility: hidden;
+}
+
+nav ul li:hover>ul {
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+    transition: .3s linear;
+}
+
+nav ul ul li {
+    width: 150px;
+    display: list-item;
+    position: relative;
+    border: 1px solid #000000;
+    border-top: none;
+}
+
+nav ul ul li a {
+    line-height: 50px;
+}
+
+nav ul ul ul {
+    border-top: none;
+}
+
+nav ul ul ul li {
+    position: relative;
+    top: -70px;
+    left: 150px;
+}
+
+nav ul ul li a i {
+    margin-left: 45px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+
+}
+
+.fa-solid fa-people-group {
+    height: 800px;
+}
+
+
+
+P {
+    text-align: justify;
+    font-size: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 0 0 15px #ffffff,
+        0 0 5px #efdbff,
+        0 0 5px #fcfcfc;
+    font-weight: bold;
+}
+
+.god1 {
+    text-align: center;
+    font-size: 20px;
+    text-shadow: 0 0 15px #32008f,
+        0 0 5px #6000af,
+        0 0 5px #fcfcfc;
+    font-weight: bold;
+    color: white;
+}
+
+/* EFECTO NEON TITULO*/
+.wrapper h1 {
+    color: #fff;
+    font-size: 4em;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-shadow: 0 0 10px #bf45f8, 0 0 20px #be32ff, 0 0 40px #be32ff,
+        0 0 80px #be32ff, 0 0 120px #be32ff;
+
+
+}
+
+.box {
+    margin-bottom: 55px;
+}
+
+.titlogo {
+    color: white;
+    font-size: 40px;
+    margin-left: 40px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #bf45f8, 0 0 20px #bf45f8, 0 0 40px #bf45f8;
+}
+
+.titlogo:hover {
+    text-shadow: 0 0 10px #bf45f8, 0 0 20px #bf45f8, 0 0 40px #bf45f8,
+        0 0 80px #bf45f8, 0 0 120px #bf45f8;
+
+}
+
+/*FOOTER*/
+
+footer {
+    background-color: black;
+    display: flex;
+    height: 70px;
+    padding: 20px;
+    border-top: 0.1px solid white;
+}
+
+footer p {
+    width: 90%;
+    margin: 30px 20px 30px 20px;
+    color: white;
+}
+
+footer div {
+    margin: 10px;
+    display: flex;
+}
+
+footer div img {
+    margin-inline: 8px;
+    border: 1.1px solid rgb(93, 141, 245);
+    border-radius: 10px;
+}

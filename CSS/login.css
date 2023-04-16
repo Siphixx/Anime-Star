@@ -1,0 +1,272 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    box-sizing: inherit;
+}
+
+
+
+
+.intro {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(12, 17, 37, 0.89);
+    transition: 1s;
+}
+
+.intro img {
+    top: 150px;
+    width: 40%;
+    margin-right: 15px;
+
+}
+
+.intro p {
+    color: rgb(231, 231, 231);
+    font-size: 1.6em;
+    margin-top: 10px;
+}
+
+.logo {
+    font-size: 2.5em;
+    color: white;
+}
+
+.anime-parts {
+    position: relative;
+    display: inline-block;
+    bottom: -20px;
+    opacity: 0;
+}
+
+.anime-parts.active {
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out.3s;
+}
+
+.anime-parts.fade {
+    bottom: 250px;
+    opacity: 0px;
+    transition: ease-in-out.5s;
+}
+
+
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    background-color: rgb(35, 6, 104);
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    padding: 6rem 2rem;
+}
+
+.content1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+form {
+    width: 360px;
+    margin-top: 215px;
+}
+
+.content1 img {
+    height: 100px;
+}
+
+.content1 h2 {
+    margin: 15px 0;
+    color: #cc75ff;
+    text-transform: uppercase;
+    font-size: 2.9rem;
+    text-shadow: 0 0 40px #cc75ff;
+}
+
+.content1 .input-div {
+    position: relative;
+    display: grid;
+    grid-template-columns: 7% 93%;
+    margin: 25px 0;
+    padding: 5px 0;
+    border-bottom: 2px solid #d9d9d9;
+}
+
+.content1 .input-div.one {
+    margin-top: 0;
+}
+
+.i {
+    color: #d9d9d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.i i {
+    transition: .3s;
+}
+
+.input-div div {
+    position: relative;
+    height: 45px;
+}
+
+.input-div div h5 {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #cc75ff;
+    text-shadow: 0 0 40px #cc75ff;
+    font-size: 18px;
+    transition: .3s;
+}
+
+.input-div:before,
+.input-div:after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 0%;
+    height: 2px;
+    background-color: #cc75ff;
+    box-shadow: 0 5px 5px 0 inset, 0 0 10px 0 #cc75ff;
+    transition: .4s;
+}
+
+.input-div:before {
+    right: 50%;
+}
+
+.input-div:after {
+    left: 50%;
+}
+
+.input-div.focus:before,
+.input-div.focus:after {
+    width: 50%;
+}
+
+.input-div.focus>div>h5 {
+    top: -5px;
+    font-size: 15px;
+}
+
+.input-div.focus>.i>i {
+    color: #999;
+}
+
+.input-div div input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0.5rem 0.7rem;
+    font-size: 1.2rem;
+    color: #cdcfd6;
+}
+
+.input-div.pass {
+    margin-bottom: 4px;
+}
+
+a {
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.9rem;
+    transition: .3s;
+    padding-bottom: 20px;
+}
+
+a:hover {
+    color: #cc75ff;
+}
+
+/* -------------BOTON.---------- */
+
+.boton-neon {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    color: #1d002e;
+    font-weight: 400;
+    border: 2px solid;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    cursor: pointer;
+    border-radius: 100px;
+    transition: 1.5s;
+    width: 360px;
+    background-color: #df76ff;
+    border-color: 5px solid rgb(89, 0, 116);
+    box-shadow: 0 0 10px 0 #cc75ff;
+}
+
+.boton-neon:hover {
+    box-shadow: 0 5px 50px 0 inset, 0 5px 50px 0 #cc75ff;
+}
+
+.goku {
+    border-radius: 50%;
+    box-shadow: 0 0 30px 0 #cc75ff;
+    width: 100px;
+    height: 300px;
+}
+
+::placeholder {
+    color: white;
+    font-size: 20px;
+    text-shadow: 10 10 100px #cc75ff;
+}
+
+.titlogo {
+    color: #fff;
+    font-size: 15em;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-shadow: 0 0 10px #bf45f8, 0 0 20px #be32ff, 0 0 40px #be32ff,
+        0 0 80px #be32ff, 0 0 120px #be32ff;
+}
+
+span{
+    text-shadow: 0 0 10px #bf45f8, 0 0 20px #be32ff, 0 0 40px #be32ff,
+            0 0 80px #be32ff, 0 0 120px #1f002e;
+}
+p{
+    text-shadow: 0 0 10px #bf45f8, 0 0 20px #be32ff, 0 0 40px #be32ff,
+            0 0 80px #be32ff, 0 0 120px #1f002e;
+}
